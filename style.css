@@ -8,11 +8,13 @@
     height: 200px;
     border: 1px solid black;
     margin: auto;
+    touch-action: manipulation;
 }
 #character{
     width: 20px;
-    height: 50px;
-    background-color: red;
+    height: 33px;
+    background-image: url('melody.png');
+    background-color: transparent;
     position:relative;
     top: 150px;
 }
@@ -40,5 +42,21 @@
     100%{left: -20px}
 }
 p{
+    text-align: center;
+}
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.popup-content {
     text-align: center;
 }
